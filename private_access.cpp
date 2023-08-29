@@ -17,12 +17,12 @@ class Student{
   	//  constructor 
   	Student()
   	{
-  		name="No name";
+  		name="No name";     // default constructor
   		roll_no=0;
   	}
   	Student(string name)
   	{
-  		this->name=name;
+  		this->name=name;     
   		roll_no=0;
   	}
   	Student(int roll)
@@ -32,12 +32,12 @@ class Student{
   	}
   	Student(int roll,string name)
   	{
-  		roll_no=roll;
+  		roll_no=roll;          //parameteric constructor 
   		this->name=name;
   	}
   	Student(Student &s1)
   	{
-  		name=s1.name;
+  		name=s1.name;          //copy constuctor
   		roll_no=s1.roll_no;
   	}
   	void display()
